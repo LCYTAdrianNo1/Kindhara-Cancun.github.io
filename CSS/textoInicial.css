@@ -1,0 +1,18 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .image img {
+    width: 44%;
+    height: auto;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 20px;
+  }
