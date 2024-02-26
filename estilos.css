@@ -139,8 +139,11 @@ body.light {
   /* Colores del botón */
   #theme-toggle {
     color: #fff;
-    background-color: #333;
     border-color: #333;
+    border: none;
+    padding: 0;
+    background: none;
+
   }
   
   /* Cambia el texto del botón según el modo */
@@ -151,3 +154,25 @@ body.light {
   body.dark #theme-toggle {
     content: "Modo Claro";
   }
+  
+  #theme-toggle img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+  
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-101%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#toggle-image {
+    animation: slideIn 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
