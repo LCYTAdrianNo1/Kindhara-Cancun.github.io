@@ -122,3 +122,32 @@
     width: 100% !important;
     height: 100% !important;
 }
+
+
+/* Colores para el modo claro */
+body.light {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Colores para el modo oscuro */
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Colores del botón */
+  #theme-toggle {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+  }
+  
+  /* Cambia el texto del botón según el modo */
+  body.light #theme-toggle {
+    content: "Modo Oscuro";
+  }
+  
+  body.dark #theme-toggle {
+    content: "Modo Claro";
+  }
