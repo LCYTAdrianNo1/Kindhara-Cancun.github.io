@@ -9,8 +9,8 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <!-- Añadir Font Awesome -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <style>
-      </style>
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    </head>
    <body>
       <header class="text-white text-center p-3" style="background-color: #2e1b2e;">
@@ -22,7 +22,7 @@
                <i class="fa fa-whatsapp" aria-hidden="true"></i>
                </button>
                <button class="btn-agendar">Contactanos
-               +52 XXXXXXXXXX
+               +52 (55) 1081-7921
                </button>
             </div>
          </div>
@@ -38,35 +38,87 @@
          </nav>
          
          Final -->
+      <main class="container-fluid mt-3 p-0">
+         <!-- Carrusel -->
+         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <!-- Slide 1 -->
+               <div class="carousel-item active">
+                  <div class="d-block w-100 slide-background" style="background-image: url('https://blogdehlapru.azurewebsites.net/wp-content/uploads/2023/07/Fisioterapia-y-Rehabitilitacion.jpg');"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Título 1</h5>
+                     <p>1</p>
+                  </div>
+               </div>
+               <!-- Slide 2 -->
+               <div class="carousel-item">
+                  <div class="d-block w-100 slide-background" style="background-image: url('https://blogdehlapru.azurewebsites.net/wp-content/uploads/2023/07/Fisioterapia-y-Rehabitilitacion.jpg');"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Título 2</h5>
+                     <p>L.</p>
+                  </div>
+               </div>
+               <!-- Slide 3 -->
+               <div class="carousel-item">
+                  <div class="d-block w-100 slide-background" style="background-image: url('https://blogdehlapru.azurewebsites.net/wp-content/uploads/2023/07/Fisioterapia-y-Rehabitilitacion.jpg');"></div>
+                  <div class="carousel-caption d-none d-md-block">
+                     <h5>Título 3</h5>
+                     <p>3</p>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+            </a>
+         </div>
+      </main>
       <main class="container mt-3">
          <div class="row">
             <!-- Caja 1 -->
             <div class="col-md-4">
-               <div class="card">
+               <div class="card-body" data-aos="fade-up">
                   <img src="Kindhara (2).png" class="card-img-top" alt="Imagen 1">
                   <div class="card-body">
                      <h5 class="card-title">Título 1</h5>
-                     <p class="card-text">Esta es la descripción de la caja 1.</p>
+                     <p class="card-text">
+                        La fisioterapia ofrece una combinación única de técnicas personalizadas 
+                        para reducir el dolor, restaurar la función y mejorar la calidad de vida.
+                        .
+                     </p>
                   </div>
                </div>
             </div>
             <!-- Caja 2 -->
             <div class="col-md-4">
-               <div class="card">
+               <div class="card-body" data-aos="fade-up">
                   <img src="Kindhara (2).png" class="card-img-top" alt="Imagen 2">
                   <div class="card-body">
                      <h5 class="card-title">Título 2</h5>
-                     <p class="card-text">Esta es la descripción de la caja 2.</p>
+                     <p class="card-text">
+                        La fisioterapia 
+                        proporciona un enfoque personalizado 
+                        para abordar el dolor, adaptando cuidadosamente
+                        el tratamiento a las necesidades 
+                        específicas de cada paciente para obtener resultados óptimos y duraderos..
+                     </p>
                   </div>
                </div>
             </div>
             <!-- Caja 3 -->
             <div class="col-md-4">
-               <div class="card">
-                  <img src="Kindhara (2).png" class="card-img-top" alt="Imagen 3">
+               <div class="card-body" data-aos="fade-up">
+                  <img src="Kindhara (2).png" class="card-img-top" alt="Imagen 2">
                   <div class="card-body">
                      <h5 class="card-title">Título 3</h5>
-                     <p class="card-text">Esta es la descripción de la caja 3.</p>
+                     <p class="card-text">
+                        La fisioterapia no solo alivia el dolor actual, sino que también ofrece una garantía de prevención de lesiones futuras al fortalecer el cuerpo, corregir desequilibrios musculares y 
+                        mejorar la biomecánica, lo que promueve una vida activa y saludable a largo plazo.
+                     </p>
                   </div>
                </div>
             </div>
@@ -90,11 +142,15 @@
       <footer class="text-white text-center p-3" style="background-color: #332433;">
          <div class="container">
             <p>Este es el pie de página.</p>
+            <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14902.79940936568!2d-86.8708415!3d21.1194646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1631238685786!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
          </div>
       </footer>
       <!-- Añadir Bootstrap JS y dependencias -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script>
+         AOS.init();
+      </script>
    </body>
 </html>
