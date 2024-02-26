@@ -75,3 +75,34 @@
     }
 }
 
+
+.slide-background {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card-img-top {
+    animation: fadeIn 5s ease-in-out;
+}
+
+.card-title {
+    font-family: 'Georgia', serif; 
+}
+
+.card-text {
+    text-align: justify;
+    font-family: 'Arial', sans-serif; 
+}
