@@ -132,8 +132,9 @@ body.light {
   
   /* Colores para el modo oscuro */
   body.dark {
-    background-color: #333;
+   /* background-color: #333; */
     color: #fff;
+    background-color: #000000;
   }
   
   /* Colores del botón */
@@ -161,7 +162,22 @@ body.light {
     height: auto;
 }
 
-  
+
+#toggle-image {
+    animation: slideIn 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn-agendar{
+    animation: slideIn 1.97s ease-in-out;
+    transition: opacity 0.9s ease-in-out; 
+}
+
+.logo{
+    animation: slideIn 1.97s ease-in-out;
+    transition: opacity 0.9s ease-in-out; 
+}
+
 
 @keyframes slideIn {
     0% {
@@ -170,9 +186,4 @@ body.light {
     100% {
         transform: translateX(0);
     }
-}
-
-#toggle-image {
-    animation: slideIn 2s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
 }
