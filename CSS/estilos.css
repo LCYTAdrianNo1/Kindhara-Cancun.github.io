@@ -1,0 +1,190 @@
+ button{
+    background: black;
+    cursor:pointer;
+    border : none;
+    padding : 16px 32px;
+    color: white;
+    font-size: 24;
+    font-weight:bold;
+    position: relative;
+    border-radius: 12px;
+ }
+
+ button:hover:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ff0000,#0000ff,#ff1493,red,blue,deeppink,red,blue,deeppink);
+    background-size :800%;
+    border-radius:10px;
+    filter:blur(8px);
+    animation:glowing 20s linear infinite;
+ }
+
+    @keyframes glowing{
+        0%{
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+
+.btn-agendar {
+        background: rgba(0, 0, 0, 0);
+        cursor:pointer;
+        border : none;
+        padding : 16px 32px;
+        color: white;
+        font-size: 24;
+        font-weight:bold;
+        position: relative;
+        border-radius: 12px;
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 14px;
+    z-index: 100;
+    animation: zoomIn 1s ease-out;
+}
+.floating-buttons .btn {
+    display: block;
+    margin-bottom: 10px;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    14% {
+        transform: scale(0.14);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.slide-background {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card-img-top {
+    animation: fadeIn 5s ease-in-out;
+}
+
+.card-title {
+    font-family: 'Georgia', serif; 
+}
+
+.card-text {
+    text-align: justify;
+    font-family: 'Arial', sans-serif; 
+}
+
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/* Colores para el modo claro */
+body.light {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Colores para el modo oscuro */
+  body.dark {
+   /* background-color: #333; */
+    color: #fff;
+    background-color: #000000;
+  }
+  
+  /* Colores del botón */
+  #theme-toggle {
+    color: #fff;
+    border-color: #333;
+    border: none;
+    padding: 0;
+    background: none;
+
+  }
+  
+  /* Cambia el texto del botón según el modo */
+  body.light #theme-toggle {
+    content: "Modo Oscuro";
+  }
+  
+  body.dark #theme-toggle {
+    content: "Modo Claro";
+  }
+  
+  #theme-toggle img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#toggle-image {
+    animation: slideIn 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.btn-agendar{
+    animation: slideIn 1.97s ease-in-out;
+    transition: opacity 0.9s ease-in-out; 
+}
+
+.logo{
+    animation: slideIn 1.97s ease-in-out;
+    transition: opacity 0.9s ease-in-out; 
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-101%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
