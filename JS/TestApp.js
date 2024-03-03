@@ -1,4 +1,5 @@
-window.addEventListener('beforeinstallprompt', (event) => {
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('beforeinstallprompt', (event) => {
     // Previene que Chrome 67 y versiones anteriores muestren automáticamente el mensaje de instalación
     event.preventDefault();
     // Guarda el evento para mostrar el mensaje de instalación posteriormente
@@ -27,3 +28,4 @@ window.addEventListener('beforeinstallprompt', (event) => {
       });
     });
   }
+});
